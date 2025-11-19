@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soramimi: 聞き間違えるために</title>
+        <link rel="stylesheet" href="styles.css">
+    <!-- Inline SVG favicon to avoid 404 requests for /favicon.ico -->
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='100%' height='100%' fill='%230b0b0b'/><text x='50%' y='50%' font-family='Yu Mincho, serif' font-size='32' fill='%23ffffff' dominant-baseline='middle' text-anchor='middle'>S</text></svg>">
+        <style>
+            /* Fallback minimal styles in case stylesheet doesn't load */
+            .container{max-width:900px;margin:40px auto;padding:20px}
+        </style>
+</head>
+<body>
+        <div class="container" role="main">
+                        <div class="header" style="justify-content:center;">
+                            <div class="hero" style="align-items:center;text-align:center">
+                                <div class="split-title" id="splitTitle">
+                                    <span class="layer top">Soramimi</span>
+                                    <span class="layer bottom" aria-hidden="true">Soramimi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                                                <div class="tagline" style="text-align:center; margin-top:10px; color:var(--muted); font-size:1rem;">「聞き間違える」ためのプロダクト</div>
+
+                                                <div class="controls-row" style="justify-content:center; margin-top:22px;">
+                                                    <button id="startButton" class="btn primary" aria-label="録音開始" title="録音を開始します">開始</button>
+                                                    <button id="stopButton" class="btn critical" disabled aria-label="録音停止" title="録音を停止します">停止</button>
+                                                    <div id="recording" class="recording" style="margin-left:14px;"> <span id="recordingDot" class="recording-dot"></span></div>
+                                                </div>
+        </div>
+
+    <script src="soramimi.js"></script>
+</body>
+</html>
